@@ -5,8 +5,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 
-import ir.otoplay.otoluxtools.Intefaces.OnSafeMemoryListener;
-import ir.otoplay.otoluxtools.Utils.SendMessage;
+import ir.otoplay.tools.Intefaces.OnSafeMemoryListener;
+import ir.otoplay.tools.Utils.SendMessage;
 
 
 public class SafeMemory {

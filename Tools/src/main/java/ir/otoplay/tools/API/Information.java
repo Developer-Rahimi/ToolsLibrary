@@ -5,8 +5,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 
-import ir.otoplay.otoluxtools.Intefaces.OnInformationListener;
-import ir.otoplay.otoluxtools.Utils.SendMessage;
+
+import ir.otoplay.tools.Intefaces.OnInformationListener;
+import ir.otoplay.tools.Utils.SendMessage;
 
 
 public class Information {
