@@ -17,6 +17,14 @@ public class SendMessage {
         intent.putExtra("Value",Value);
         context.sendBroadcast(intent);
     }
+    public void SendDeviceInformation(String Target,String Command,String Value){
+        Intent intent = new Intent();
+        intent.setAction("ServiceManger.Message");
+        intent.putExtra("Target",Target);
+        intent.putExtra("Command",Command);
+        intent.putExtra("Value",Value);
+        context.sendBroadcast(intent);
+    }
     public void SendSafeMemory(String Target,String Key,String Data){
         Intent intent = new Intent();
         intent.setAction("SafeMemory.Message");
