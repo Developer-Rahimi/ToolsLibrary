@@ -25,7 +25,7 @@ public class Information {
     public void GetInformation(){
         sendMessage.SendInformation("Information","Get","");
     }
-    public class InformationReceiver extends BroadcastReceiver {
+    private class InformationReceiver extends BroadcastReceiver {
 
         @Override
         public void onReceive(Context context, Intent intent) {

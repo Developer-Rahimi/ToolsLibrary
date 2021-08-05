@@ -37,7 +37,7 @@ public class SafeMemory {
             e.printStackTrace();
         }
     }
-    public class SafeMemoryReceiver extends BroadcastReceiver {
+    private class SafeMemoryReceiver extends BroadcastReceiver {
 
         @Override
         public void onReceive(Context context, Intent intent) {
