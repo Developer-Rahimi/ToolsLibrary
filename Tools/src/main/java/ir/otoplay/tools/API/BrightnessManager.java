@@ -20,7 +20,6 @@ public class BrightnessManager {
         Settings.System.putInt(cResolver, Settings.System.SCREEN_BRIGHTNESS, brightness);
     }
     public void SetValue(int value){
-
         ContentResolver cResolver = context.getContentResolver();
         Settings.System.putInt(cResolver, Settings.System.SCREEN_BRIGHTNESS, value);
     }

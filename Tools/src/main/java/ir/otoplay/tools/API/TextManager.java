@@ -13,6 +13,21 @@ import java.util.Date;
 public class TextManager {
     public TextManager() {
     }
+    public String ReadCommand(String path) {
+        StringBuilder stringBuilder = new StringBuilder();
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(new File(path)));
+            String line;
+            while ((line = br.readLine()) != null) {
+                stringBuilder.append(line);
+                stringBuilder.append('\n');
+            }
+            br.close();
+        }
+        catch (IOException e) {
+        }
+        return stringBuilder.toString().replaceAll(" ","").replaceAll("\n","");
+    }
     public String Read(File file){
         StringBuilder stringBuilder = new StringBuilder();
         try {
