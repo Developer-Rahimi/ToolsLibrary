@@ -25,6 +25,9 @@ public class Information {
     public void GetInformation(){
         sendMessage.SendInformation("Information","Get","");
     }
+    public void GetIMEI(){
+        sendMessage.SendInformation("Information","IMEI","");
+    }
     private class InformationReceiver extends BroadcastReceiver {
 
         @Override
@@ -34,7 +37,7 @@ public class Information {
                     String Command=intent.getStringExtra("Command");
                     String Value=intent.getStringExtra("Value");
                     if(onInformationListener!=null){
-                        onInformationListener.onInformation(Value);
+                        onInformationListener.onInformation(Command,Value);
                     }
                 }
                 catch (Exception e){
