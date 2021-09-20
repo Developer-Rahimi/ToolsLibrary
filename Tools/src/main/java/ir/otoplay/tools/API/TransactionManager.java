@@ -22,6 +22,15 @@ public class TransactionManager {
     public void GetTransaction(){
         Send("GetTransaction","");
     }
+    public void LoginDriver(String pan){
+        Send("LoginDriver",pan);
+    }
+    public void Logout(){
+        Send("Logout","");
+    }
+    public void SetAmount(String Amount){
+        Send("Amount",Amount);
+    }
     public void ServerReceive(String ids){
         Send("ServerReceive",ids);
     }
