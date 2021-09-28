@@ -46,8 +46,8 @@ public class CartManger {
     public void SetAmount(String amount){
         Send("Amount",amount+"");
     }
-    public void SetLoginPan(String amount){
-        Send("Pan",amount+"");
+    public void SetLoginPan(String pan){
+        Send("Pan",pan+"");
     }
     public void SetTerminalID(String val){
         Send("TerminalID",val+"");

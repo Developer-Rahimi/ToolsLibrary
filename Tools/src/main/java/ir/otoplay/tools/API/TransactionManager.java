@@ -31,6 +31,12 @@ public class TransactionManager {
     public void SetAmount(String Amount){
         Send("Amount",Amount);
     }
+    public void SetQrCode(String qrcode){
+        Send("QRCODE",qrcode);
+    }
+    public void GetInformation(){
+        Send("Information","");
+    }
     public void ServerReceive(String ids){
         Send("ServerReceive",ids);
     }
