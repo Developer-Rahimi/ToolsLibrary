@@ -122,7 +122,7 @@ public class StatusBarManager {
         }
     }
 
-    public void SendSystemUI(String Action,String Target){
+    private void SendSystemUI(String Target,String Action){
         Intent intent = new Intent();
         intent.setAction("SystemUI.Command");
         intent.putExtra("Action",Action);
