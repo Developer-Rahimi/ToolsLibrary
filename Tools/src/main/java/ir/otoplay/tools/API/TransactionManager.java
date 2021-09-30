@@ -40,6 +40,9 @@ public class TransactionManager {
     public void ServerReceive(String ids){
         Send("ServerReceive",ids);
     }
+    public void ConsoleReceive(String ids){
+        Send("ConsoleReceive",ids);
+    }
     private class TransactionReceiver extends BroadcastReceiver {
 
         @Override
