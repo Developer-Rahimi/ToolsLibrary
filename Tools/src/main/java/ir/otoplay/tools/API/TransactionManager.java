@@ -40,8 +40,8 @@ public class TransactionManager {
     public void ServerReceive(String ids){
         Send("ServerReceive",ids);
     }
-    public void ConsoleReceive(String ids){
-        Send("ConsoleReceive",ids);
+    public void LauncherReceive(String ids){
+        Send("LauncherReceive",ids);
     }
     private class TransactionReceiver extends BroadcastReceiver {
 
